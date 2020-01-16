@@ -1,0 +1,62 @@
+.home .wrapp-footer {
+    margin-top: 30px;
+}
+.wrapp-footer {
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    footer{
+        .inner{
+          font-size: 12px;
+          font-weight: 300;
+          ul li{
+            display: inline-block;
+            margin-right: 10px;
+          }
+          ul li,
+          ul li a{
+            color: $color-black;
+          }
+          .block{
+              margin-bottom: 12px;
+          }
+        }
+        
+    }
+    .top {
+        margin-bottom: 50px;
+    }
+    .block-item {
+        @include display-flex();
+        width: 100%;
+        .box-top {
+            @include display-flex();
+            margin-right: 10px;
+            .icon img {
+                width: 20px;
+                margin-right: 5px;
+                margin-top: -10px;
+            }
+            .text {
+                white-space: nowrap;
+                font-size: 14px;
+            }
+        }
+        .desc {
+            color: #999;
+            font-size: 16px;
+            .call {
+                float: right;
+                margin-left: 10px;
+                position: absolute;
+                right: 0;
+
+            }
+        }
+        
+    }
+    .footer-bottom {
+        font-size: 15px;
+        line-height: 30px;
+    }
+}

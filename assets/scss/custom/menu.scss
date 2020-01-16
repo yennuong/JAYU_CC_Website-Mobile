@@ -1,0 +1,158 @@
+.main-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    z-index: 10;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    .inner-main-menu {
+        padding: 20px;
+        .top-menu {
+            @include display-flex();
+            @include display-flex-between();
+            .logo img {
+                width: 100px;
+                filter: brightness(0) invert(1);
+            }
+            .close-menu img {
+                width: 25px;
+                filter: brightness(0) invert(1);
+            }
+        }
+        .middle-block {
+            margin-top: 20px;
+            .icon-search {
+                display: inline-block;
+                float: right;
+                width: 40px;
+                height: 40px;
+                line-height: 36px;
+                background-color: #fff;
+                border-radius: 50%;
+                text-align: center;
+               
+                img {
+                    filter: none;
+                    width: 18px;
+                }
+                &.active {
+                    background-color: transparent;
+                    img {
+                        display: none;
+                    }
+                    .on-search {
+                        display: block;
+                        color: $color-gray-3;
+                    }
+                }
+            }
+            form.block-search {
+                background: #666666;
+                width: 80%;
+                border-radius: 5px;
+                padding: 10px;
+                width: 86%;
+                margin-bottom: 20px;
+                height: 50px;
+                position: relative;
+                input {
+                    background-color: transparent;
+                    border: 0;
+                    width: 86%;
+                    color: #D2D2D2;
+                    
+                }
+                button {
+                    position: absolute;
+                    right: 12px;
+                    z-index: 1;
+                    img {
+                        width: 20px;
+                        margin-top: -5px;
+                        filter: brightness(0) invert(1);
+                    }
+                }
+                 
+            }
+            .welcome {
+                margin-bottom: 25px;
+                h5 {
+                    line-height: 30px;
+                }
+                a {
+                    color: $color-gray-3;
+                    font-size: 18px;
+                    img {
+                        width: 20px;
+                        margin-right: 10px;
+                    }
+                }
+            } 
+            
+        }
+    }
+    .ace-responsive-menu > li:first-child {
+        border-top: 0;
+    }
+    .ace-responsive-menu > li {
+        border-bottom: 0;
+        >a {
+            position: relative;
+            color: $color-gray-3;
+            padding: 10px 20px 14px 20px;
+            &:before {
+                content: '';
+                width: 12px;
+                height: 1px;
+                background: $color-gray-3;
+                position: absolute;
+                left: 0;
+                top: 20px;
+            }
+            &:after {
+                content: '';
+                width: 12px;
+                height: 1px;
+                background: $color-gray-3;
+                position: absolute;
+                left: 0;
+                top: 20px;
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+
+        }
+        &.menu-active >a {
+            &::before {
+                background: #fff;
+            }
+            &::after {
+                opacity: 0;
+            }
+        }
+    }
+
+    .ace-responsive-menu li a {
+        color: $color-gray-3;
+    }
+    .ace-responsive-menu li a:hover,
+    .ace-responsive-menu li.menu-active > a {
+        background: transparent !important;
+        color: #fff;
+    }
+    .result-search {
+        font-size: 15px;
+        color: #fff;
+        h5 {
+            margin: 20px 0;
+        }
+        a {
+            color: #4683D7;
+        }
+    }
+}

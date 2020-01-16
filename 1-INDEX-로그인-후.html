@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TA-FUN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/css/ace-responsive-menu.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="home">
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 logo">
+                    <h1>
+                        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                    </h1>
+                </div>
+                <div class="col-8 header-right">
+                    <div class="user">
+                        <img src="assets/images/icon-user.png">
+                    </div>
+                    <div class="notification">
+                        <img src="assets/images/icon-info.png">
+                    </div>
+                    <div class="icon-menu">
+                        <img src="assets/images/menu_bar.png">
+                    </div>
+                    
+                </div>
+                <nav class="main-menu" style="display: none;">
+                    <div class="inner-main-menu">
+                        <div class="top-menu">
+                            <div class="logo"><h1>
+                                <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                            </h1></div>
+                            <div class="close-menu">
+                                <img src="assets/images/icon-close.png" >
+                            </div>
+                        </div>
+                        <div class="middle-block">
+                            <div class="search-in-menu">
+                                <div class="icon-search">
+                                    <img src="assets/images/icon-search.png" >
+                                    <span class="on-search hidden">취소</span>
+                                </div>
+                                <form class="block-search" style="display: none;">
+                                    <input type="text" placeholder="검색어를 입력해 주세요.">
+                                    <button type="button"><img src="assets/images/icon-search.png" ></button>
+                                </form>
+                            </div>
+                            <div class="welcome">
+                                <h5 class="text-yellow">강도식님<br /> 환영합니다.</h5>
+                                <a href="#" class="logout">로그아웃 <img src="assets/images/icon-logout.png"></a>
+                            </div>
+                        </div>
+                        <!-- Menu Toggle btn-->
+                    <div class="menu-toggle">
+                        <button type="button" id="menu-btn">
+                        </button>
+                    </div>
+                    <!-- Responsive Menu Structure-->
+                    <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+                    
+                    <ul  id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+                        <li>
+                            <a href="javascript:;">예약서비스</a>
+                            <ul>
+                                <li><a href="#">실시간예약</a></li>
+                                <li><a href="#">주말예약</a></li>
+                                <li><a href="#">대기예약</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;">뉴스&이벤트</a>
+                            <ul>
+                                <li><a href="#">세일&프로모션</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">예약이용안내</a></li>
+                                <li><a href="#">이용요금안내</a></li>
+                                <li><a href="#">홈페이지 이용안내</a></li>
+                                <li><a href="#">레스토랑 이용안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;">클럽소개</a>
+                            <ul>
+                                <li><a href="#">클럽개요</a></li>
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">경영테마</a></li>
+                                <li><a href="#">주요시설</a></li>
+                                <li><a href="#">입회안내</a></li>
+                                <li><a href="#">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;">코스안내</a>
+                            <ul>
+                                <li><a href="#">전체코스소개</a></li>
+                                <li><a href="#">OUT코스</a></li>
+                                <li><a href="#">IN코스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;">고객센터</a>
+                            <ul>
+                                <li><a href="#">주요연락처</a></li>
+                                <li><a href="#">분실물센터</a></li>
+                                <li><a href="#">명예의전당</a></li>
+                                <li><a href="#">날씨정보</a></li>
+                                <li><a href="#">자료실</a></li>
+                                <li><a href="#">통합FAQ</a></li>
+                            </ul>
+                    </ul>
+                    </div>
+                    
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="banner-homepage">
+        <div class="box-outer ">
+            <img class="banner-img" src="assets/images/banner-homepage.png" />
+            <div class="banner-content member_login">
+                <div class="title">강도식 회원님</div> 
+                <ul class="infor-member">
+                    <li class="text-yellow"><span class="number">2</span><br/>예약</li>
+                    <li class="text-yellow"><span class="number">3</span> <br/>혜택</li>
+                    <li class="text-yellow opacity-5"><span class="number">0</span> <br/>소식</li>
+                    <li class="text-yellow opacity-5"><span class="number">0 </span><br/>스코어</li>
+                </ul>
+            </div>
+            <div class="calender-bottom">
+                <div class="box-line box-line-01">
+                    <ul>
+                        <li class="item item-gray-dark">
+                            <span class="number">9</span>
+                            <span class="team">Sep</span>
+                        </li>
+                        <li class="item item-white-light">
+                            <span class="number">22</span>
+                            <span class="team">0</span>
+                        </li>
+                        <li class="item item-gray">
+                            <span class="number">23</span>
+                            <span class="team">1팀</span>
+                        </li>
+                        <li class="item item-gray">
+                            <span class="number">24</span>
+                            <span class="team">3팀</span>
+                        </li>
+                        <li class="item item-gray">
+                            <span class="number">25</span>
+                            <span class="team">2팀</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="make-reservation text-yellow"><i class="fa fa-calendar"></i>예약하기</button>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="weather-detail">
+                <ul>
+                    <li class="item">
+                        <img src="assets/images/weather1.png" />
+                    </li>
+                    <li class="item">
+                        <img src="assets/images/weather2.png" />
+                    </li>
+                    <li class="item">
+                        <img src="assets/images/weather3.png" />
+                    </li>
+                    <li class="item">
+                        <img src="assets/images/weather4.png" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-page">
+        <div class="container">
+            <div class="row">
+                <div class="wrapper">
+                    <section class="block-promo">
+                        <h3 class="block-title promo-title">
+                            추천 프로모션
+                        </h3>
+                        <div class="block-inner">
+                            <div class="block-list block-list-col-3">
+                                <div class="block-list-inner slider">
+                                    <div class="block-item">
+                                        <div class="box-inner">
+                                            <a href="#" class="box-link">
+                                                <img src="assets/images/promo01.png" />
+                                            </a>
+                                            <h3 class="box-title"><a href="#"> 재규어자동차 홀인원상 이벤트</a>
+                
+                                            </h3>
+                                            <p class="date">2019-09-01 ~ 2019-12-30</p>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-inner">
+                                            <a href="#" class="box-link">
+                                                <img src="assets/images/promo02.png" />
+                                            </a>
+                                            <h3 class="box-title">
+                                                <a href="#">
+                                                5월 봄맞이 골프페이 무인입장 고객
+                                                현장할인 프로모션
+                                                </a>
+                                            </h3>
+                                            <p class="date">2019-09-01 ~ 2019-12-30</p>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-inner">
+                                            <a href="#" class="box-link">
+                                                <img src="assets/images/promo03.png" />
+                                            </a>
+                                            <h3 class="box-title">
+                                                <a href="#">
+                                                성탄 및 새해 고객행사
+                                                </a>
+                                            </h3>
+                                            <p class="date">2019-09-01 ~ 2019-12-30</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="more-text more-promo" href="#">프로모션 더 보기</a>
+                    </section>
+                    <section class="block-notice">
+                        <h3 class="block-title notice-title">
+                            공지사항
+                        </h3>
+                        <div class="block-inner">
+                            <div class="block-list block-list-col-4">
+                                <div class="block-list-inner slider">
+                                    <div class="block-item">
+                                        <h3 class="box-title">
+                                            <span>10월</span>
+                                            <span>은행나무 페스티벌이</span>
+                                            <span>진행됩니다!</span>
+                                        </h3>
+                                        <p class="date">2019-09-01</p>
+                                    </div>
+                                    <div class="block-item">
+                                        <h3 class="box-title">
+                                            <span>마스터즈 컨트리클럽</span>
+                                            <span>2020년 연단체<span>
+                                                    <span>모집 안내</span>
+                                        </h3>
+                                        <p class="date">2019-09-01</p>
+                                    </div>
+                                    <div class="block-item">
+                                        <h3 class="box-title">
+                                            <span>10월</span>
+                                            <span>은행나무 페스티벌이</span>
+                                            <span>진행됩니다!</span>
+                                        </h3>
+                                        <p class="date">2019-09-01</p>
+                                    </div>
+                                    <div class="block-item">
+                                        <h3 class="box-title">
+                                            <span>10월</span>
+                                            <span>은행나무 페스티벌이</span>
+                                            <span> 진행됩니다!</span>
+                                        </h3>
+                                        <p class="date">2019-09-01</p>
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                        <a class="more-text more-promo" href="#">프로모션 더 보기</a>
+                    </section>
+                    <section class="block-promo-2">
+                        <div class="block-inner">
+                            <div class="block-list block-list-col-3">
+                                <div class="block-list-inner">
+                                    <div class="block-item">
+                                        <div class="box-inner">
+                                            <a href="#" class="box-link">
+                                                <img src="assets/images/promo04.png" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-inner">
+                                            <a href="#" class="box-link">
+                                                <img src="assets/images/promo05.png" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-inner">
+                                            <a href="#" class="box-link">
+                                                <img src="assets/images/promo06.png" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="rule">
+                        <div class="menu-rule">
+                            <ul>
+                                <li>
+                                    <a href="#">이용약관</a>
+                                </li>
+                                <li>
+                                    <a href="#">개인정보처리방침   </a>
+                                </li>
+                                <li>
+                                    <a href="#">영상정보처리기기운영방침 </a>
+                                </li>
+                                <li>
+                                    <a href="#">입회안내</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </section>
+                </div>
+                <div class="block-brand">
+                    <div class="select-option select-brand">Family Site</div>
+                    <div class="our-brands" style="display: none">
+                        <div class="inner">
+                            <ul>
+                                <li><img src="assets/images/brand/1.png"></li>
+                                <li><img src="assets/images/brand/2.png"></li>
+                                <li><img src="assets/images/brand/3.png"></li>
+                                <li><img src="assets/images/brand/4.png"></li>
+                                <li><img src="assets/images/brand/5.png"></li>
+                                <li><img src="assets/images/brand/6.png"></li>
+                                <li><img src="assets/images/brand/7.png"></li>
+                                <li><img src="assets/images/brand/8.png"></li>
+                                <li><img src="assets/images/brand/9.png"></li>
+                                <li><img src="assets/images/brand/10.png"></li>
+                                <li><img src="assets/images/brand/11.png"></li>
+                                <li><img src="assets/images/brand/12.png"></li>
+                                <li><img src="assets/images/brand/13.png"></li>
+                                <li><img src="assets/images/brand/14.png"></li>
+                                <li><img src="assets/images/brand/15.png"></li>
+                                <li><img src="assets/images/brand/16.png"></li>
+                                <li><img src="assets/images/brand/17.png"></li>
+                                <li><img src="assets/images/brand/18.png"></li>
+                                <li><img src="assets/images/brand/19.png"></li>
+                                <li><img src="assets/images/brand/20.png"></li>
+                                <li><img src="assets/images/brand/21.png"></li>
+                            </ul>
+                    </div>
+                    
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer class="wrapp-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer top">
+                        <div class="footer-top inner">
+                            <div class="block-contact">
+                                <div class="block-list block-list-col-4">
+                                    <div class="block-list-inner">
+                                        <div class="block-item">
+                                            <div class="box-top">
+                                                        <span class="icon">
+                                                            <img src="assets/images/icon-calendar_footer.png">
+                                                        </span>
+                                                <span class="text">
+                                                            예약실
+                                                        </span>
+                                            </div>
+                                            <div class="desc">
+                                                <p class="small">T.031-887-7700 ~ 1 / F. 031-882-3122 <span class="call">전화하기</span> </p>
+                                            </div>
+                                        </div>
+                                        <div class="block-item">
+                                            <div class="box-top">
+                                                        <span class="icon">
+                                                            <img src="assets/images/icon-person_footer.png">
+                                                        </span>
+                                                <span class="text">
+                                                            예약실
+                                                        </span>
+                                            </div>
+                                            <div class="desc">
+                                                <p class="small">T. 031-887-7700 ~ 1 <span class="call">전화하기</span> </p>
+                                            </div>
+                                        </div>
+                                        <div class="block-item">
+                                            <div class="box-top">
+                                                        <span class="icon">
+                                                            <img src="assets/images/icon-computer_footer.png">
+                                                        </span>
+                                                <span class="text">
+                                                            예약실
+                                                        </span>
+                                            </div>
+                                            <div class="desc">
+                                                <p class="small">T. 031-887-7700 ~ 1 <span class="call">전화하기</span> </p>
+                                            </div>
+                                        </div>
+                                        <div class="block-item">
+                                            <div class="box-top">
+                                                        <span class="icon">
+                                                            <img src="assets/images/icon-chef_footer.png">
+                                                        </span>
+                                                <span class="text">
+                                                            예약실
+                                                        </span>
+                                            </div>
+                                            <div class="desc">
+                                                <p class="small">T. 031-887-7700 ~ 1 <span class="call">전화하기</span> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer bottom">
+                        <div class="footer-bottom inner">
+                            <div class="block">
+                                <ul>
+                                    <li>신세계건설(주)</li>
+                                    <li>주소: 경기도 여주시 가남읍 자유그린길 69</li>
+                                    <li>사업자등록번호: 201-81-44158</li>
+                                    <li>통신판매업 신고번호: 제2009-경기여주-0051호</li>
+                                </ul>
+                            </div>
+                            <div class="block">
+                                <ul>
+                                    <li>Tel. 02-2002-1231</li>
+                                    <li>Fax. 02-2002-1232</li>
+                                    <li>E-mail. jayucc@shinsegae.com</li>
+                                    <li>대표이사: 윤명규</li>
+                                    <li>개인정보책임자: 서화영</li>
+                                </ul>
+                            </div>
+                            <p>
+                                All Contents COPYRIGHT @JAYU COUNTRY CLUB
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+<script src="assets/script/jquery.min.js"></script>
+<script src="assets/script/ace-responsive-menu-min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/script/slick.min.js"></script>
+<script src="assets/script/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TA-FUN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/css/ace-responsive-menu.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 logo">
+                <h1>
+                    <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                </h1>
+            </div>
+            <div class="col-8 header-right">
+                <div class="user">
+                    <img src="assets/images/icon-user.png">
+                </div>
+                <div class="notification">
+                    <img src="assets/images/icon-info.png">
+                </div>
+                <div class="icon-menu">
+                    <img src="assets/images/menu_bar.png">
+                </div>
+                
+            </div>
+            <nav class="main-menu" style="display: none;">
+                <div class="inner-main-menu">
+                    <div class="top-menu">
+                        <div class="logo"><h1>
+                            <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                        </h1></div>
+                        <div class="close-menu">
+                            <img src="assets/images/icon-close.png" >
+                        </div>
+                    </div>
+                    <div class="middle-block">
+                        <div class="search-in-menu">
+                            <div class="icon-search">
+                                <img src="assets/images/icon-search.png" >
+                                <span class="on-search hidden">취소</span>
+                            </div>
+                            <form class="block-search" style="display: none;">
+                                <input type="text" placeholder="검색어를 입력해 주세요.">
+                                <button type="button"><img src="assets/images/icon-search.png" ></button>
+                            </form>
+                        </div>
+                        <div class="welcome">
+                            <h5 class="text-yellow">강도식님<br /> 환영합니다.</h5>
+                            <a href="#" class="logout">로그아웃 <img src="assets/images/icon-logout.png"></a>
+                        </div>
+                    </div>
+                    <!-- Menu Toggle btn-->
+                <div class="menu-toggle">
+                    <button type="button" id="menu-btn">
+                    </button>
+                </div>
+                <!-- Responsive Menu Structure-->
+                <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+                
+                <ul  id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+                    <li>
+                        <a href="javascript:;">예약서비스</a>
+                        <ul>
+                            <li><a href="#">실시간예약</a></li>
+                            <li><a href="#">주말예약</a></li>
+                            <li><a href="#">대기예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">뉴스&이벤트</a>
+                        <ul>
+                            <li><a href="#">세일&프로모션</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">예약이용안내</a></li>
+                            <li><a href="#">이용요금안내</a></li>
+                            <li><a href="#">홈페이지 이용안내</a></li>
+                            <li><a href="#">레스토랑 이용안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">클럽소개</a>
+                        <ul>
+                            <li><a href="#">클럽개요</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">경영테마</a></li>
+                            <li><a href="#">주요시설</a></li>
+                            <li><a href="#">입회안내</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">코스안내</a>
+                        <ul>
+                            <li><a href="#">전체코스소개</a></li>
+                            <li><a href="#">OUT코스</a></li>
+                            <li><a href="#">IN코스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">고객센터</a>
+                        <ul>
+                            <li><a href="#">주요연락처</a></li>
+                            <li><a href="#">분실물센터</a></li>
+                            <li><a href="#">명예의전당</a></li>
+                            <li><a href="#">날씨정보</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">통합FAQ</a></li>
+                        </ul>
+                </ul>
+                </div>
+                
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="main-page main-page-1 page-number_98">
+    <div class="container">
+        <div class="row">
+            <div class="block-calendar-infor ">
+                <p>2019. 12. 27 (목)</p>
+            </div>
+            <div class="regulation-info">
+                <div class="inner-regulation-info info-booking-detail">
+                    <div class="info-in-out">
+                        <h5 class="title">IN코스</h5>
+                        <ul>
+                            <li>
+                                <span>10:12</span>
+                                <span class="text-yellow" data-toggle="modal" data-target="#confirm_reservation" >110,000 <i class='fa fa-arrow-circle-right'></i></span>
+                            </li>
+                            <li class="text-gray">
+                                <span>10:19</span>
+                                <span>마감</span>
+                            </li>
+                            <li>
+                                <span>10:26</span>
+                                <span class="text-yellow" data-toggle="modal" data-target="#confirm_blooking">110,000 <i class='fa fa-arrow-circle-right'></i></span>
+                            </li>
+                            <li class="text-gray">
+                                <span>10:33</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>10:40</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>10:47</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>10:54</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>11:08</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>11:15</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>11:22</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>11:29</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>11:36</span>
+                                <span>마감</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-in-out">
+                        <h5 class="title">OUT코스</h5>
+                        <ul>
+                            <li class="text-gray">
+                                <span>09:51</span>
+                                <span>마감</span>
+                            </li>
+                            <li>
+                                <span>09:58</span>
+                                <span class="text-yellow">110,000 <i class='fa fa-arrow-circle-right'></i></span>
+                            </li>
+                            <li class="text-gray">
+                                <span>10:05</span>
+                                <span>마감</span>
+                            </li>
+                            <li>
+                                <span>10:12</span>
+                                <span class="text-yellow">110,000 <i class='fa fa-arrow-circle-right'></i></span>
+                            </li>
+                            <li>
+                                <span>10:19</span>
+                                <span class="text-red">110,000 <i class='fa fa-arrow-circle-right'></i></span>
+                            </li>
+                            <li class="text-gray">
+                                <span>10:26</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>10:33</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>10:40</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>10:47</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>10:54</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>11:01</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>11:08</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>11:15</span>
+                                <span>마감</span>
+                            </li>
+                            <li>
+                                <span>11:22</span>
+                                <span class="text-yellow">110,000 <i class='fa fa-arrow-circle-right'></i></span>
+                            </li>
+                            <li>
+                                <span>11:29</span>
+                                <span class="text-yellow">110,000 <i class='fa fa-arrow-circle-right'></i></span>
+                            </li>
+                            <li class="text-gray">
+                                <span>11:36</span>
+                                <span>마감</span>
+                            </li>
+                            <li class="text-gray">
+                                <span>11:43</span>
+                                <span>마감</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="wrapp-footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer top">
+                    <div class="footer-top inner">
+                        <div class="block-contact">
+                            <div class="block-list block-list-col-4">
+                                <div class="block-list-inner">
+                                    <div class="block-item">
+                                        <div class="box-top">
+                                                    <span class="icon">
+                                                        <img src="assets/images/icon-calendar_footer.png">
+                                                    </span>
+                                            <span class="text">
+                                                        예약실
+                                                    </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="small">T.031-887-7700 ~ 1 / F. 031-882-3122 <span class="call">전화하기</span> </p>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-top">
+                                                    <span class="icon">
+                                                        <img src="assets/images/icon-person_footer.png">
+                                                    </span>
+                                            <span class="text">
+                                                        예약실
+                                                    </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="small">T. 031-887-7700 ~ 1 <span class="call">전화하기</span> </p>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-top">
+                                                    <span class="icon">
+                                                        <img src="assets/images/icon-computer_footer.png">
+                                                    </span>
+                                            <span class="text">
+                                                        예약실
+                                                    </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="small">T. 031-887-7700 ~ 1 <span class="call">전화하기</span> </p>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-top">
+                                                    <span class="icon">
+                                                        <img src="assets/images/icon-chef_footer.png">
+                                                    </span>
+                                            <span class="text">
+                                                        예약실
+                                                    </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="small">T. 031-887-7700 ~ 1 <span class="call">전화하기</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer bottom">
+                    <div class="footer-bottom inner">
+                        <div class="block">
+                            <ul>
+                                <li>신세계건설(주)</li>
+                                <li>주소: 경기도 여주시 가남읍 자유그린길 69</li>
+                                <li>사업자등록번호: 201-81-44158</li>
+                                <li>통신판매업 신고번호: 제2009-경기여주-0051호</li>
+                            </ul>
+                        </div>
+                        <div class="block">
+                            <ul>
+                                <li>Tel. 02-2002-1231</li>
+                                <li>Fax. 02-2002-1232</li>
+                                <li>E-mail. jayucc@shinsegae.com</li>
+                                <li>대표이사: 윤명규</li>
+                                <li>개인정보책임자: 서화영</li>
+                            </ul>
+                        </div>
+                        <p>
+                            All Contents COPYRIGHT @JAYU COUNTRY CLUB
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</footer>
+<!-- Modal Confirm Reservation-->
+<div class="modal fade" id="confirm_reservation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="title">예약정보확인</div>
+                <div class="reser_info">
+                    <div>
+                        <p>강도식(정회원)</p>
+                        <p>회원번호 03971984</p>
+                        <p>그린피 110,000원</p>
+                    </div>
+                    <div>
+                        <p>IN코스</p>
+                        <p>2019.12.28 (목)4</p>
+                        <p>10:26 AM</p>
+                    </div>
+                </div>
+                <div class="mobile-number">
+                    <p>휴대폰번호</p>
+                    <p class="phone">010-9730-1990</p>
+                </div>
+                <div class="check-booking">
+                    <p class="check-radio">위임예약</p>
+                    <p class="text-red warning" style="display: none;">실 이용자 정보를 입력 바랍니다.</p>
+                </div>
+                <div class="input-information" style="display: none;">
+                    <form>
+                        <div class="form-row">
+                            <label for="inputEmail3" class=" col-form-label">예약자명</label>
+                            <div class="form-input">
+                                <input type="text" class="form-control" placeholder="이름을 입력하세요.">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label for="inputEmail3" class=" col-form-label">연락처</label>
+                            <div class="form-input">
+                                <input type="text" class="form-control" placeholder="연락처를 입력하세요.">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="note-info">
+                        <p class="text-yellow">※ 비회원 4인 내장 시 위임가능 (가족, 지명회원 위임불가)</p>
+                        <p class="text-yellow">※ 회원본인 “당일” 미내장 조건 위반시, 회원본인에 게 내장정지 등의 페널티가 부여될 수 있습니다.</p>
+                    </div>
+                </div>
+                <button class="btn-confirm" type="button">예약하기</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Modal Confirm bookind-->
+<div class="modal fade" id="confirm_blooking" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>예약이 확정되면 등록해주신<br />
+                        핸드폰 번호로 확정 문자가 <br />
+                        발송됩니다.</p>
+                    <a class="confrim_finish text-red" href="#">확인 <br /><i class="fa fa-arrow-right"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+<script src="assets/script/jquery.min.js"></script>
+<script src="assets/script/ace-responsive-menu-min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/script/main.js"></script>
+</body>
+</html>

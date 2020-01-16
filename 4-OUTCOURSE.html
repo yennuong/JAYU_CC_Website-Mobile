@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TA-FUN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/css/ace-responsive-menu.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet"></link>
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 logo">
+                <h1>
+                    <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                </h1>
+            </div>
+            <div class="col-8 header-right">
+                <div class="user">
+                    <img src="assets/images/icon-user.png">
+                </div>
+                <div class="notification">
+                    <img src="assets/images/icon-info.png">
+                </div>
+                <div class="icon-menu">
+                    <img src="assets/images/menu_bar.png">
+                </div>
+                
+            </div>
+            <nav class="main-menu" style="display: none;">
+                <div class="inner-main-menu">
+                    <div class="top-menu">
+                        <div class="logo"><h1>
+                            <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                        </h1></div>
+                        <div class="close-menu">
+                            <img src="assets/images/icon-close.png" >
+                        </div>
+                    </div>
+                    <div class="middle-block">
+                        <div class="search-in-menu">
+                            <div class="icon-search">
+                                <img src="assets/images/icon-search.png" >
+                                <span class="on-search hidden">취소</span>
+                            </div>
+                            <form class="block-search" style="display: none;">
+                                <input type="text" placeholder="검색어를 입력해 주세요.">
+                                <button type="button"><img src="assets/images/icon-search.png" ></button>
+                            </form>
+                        </div>
+                        <div class="welcome">
+                            <h5 class="text-yellow">강도식님<br /> 환영합니다.</h5>
+                            <a href="#" class="logout">로그아웃 <img src="assets/images/icon-logout.png"></a>
+                        </div>
+                    </div>
+                    <!-- Menu Toggle btn-->
+                <div class="menu-toggle">
+                    <button type="button" id="menu-btn">
+                    </button>
+                </div>
+                <!-- Responsive Menu Structure-->
+                <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+                
+                <ul  id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+                    <li>
+                        <a href="javascript:;">예약서비스</a>
+                        <ul>
+                            <li><a href="#">실시간예약</a></li>
+                            <li><a href="#">주말예약</a></li>
+                            <li><a href="#">대기예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">뉴스&이벤트</a>
+                        <ul>
+                            <li><a href="#">세일&프로모션</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">예약이용안내</a></li>
+                            <li><a href="#">이용요금안내</a></li>
+                            <li><a href="#">홈페이지 이용안내</a></li>
+                            <li><a href="#">레스토랑 이용안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">클럽소개</a>
+                        <ul>
+                            <li><a href="#">클럽개요</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">경영테마</a></li>
+                            <li><a href="#">주요시설</a></li>
+                            <li><a href="#">입회안내</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">코스안내</a>
+                        <ul>
+                            <li><a href="#">전체코스소개</a></li>
+                            <li><a href="#">OUT코스</a></li>
+                            <li><a href="#">IN코스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">고객센터</a>
+                        <ul>
+                            <li><a href="#">주요연락처</a></li>
+                            <li><a href="#">분실물센터</a></li>
+                            <li><a href="#">명예의전당</a></li>
+                            <li><a href="#">날씨정보</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">통합FAQ</a></li>
+                        </ul>
+                </ul>
+                </div>
+                
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="main-page main-page-4">
+    <div class="container">
+        <div class="row">
+            <div class="top">
+                    <h3 class="page-title">아웃코스</h3>
+                    
+            </div>
+            <!-- 01 -->
+            <div class="block-hold">
+                <div class="block-hold-top">
+                    <div class="hold-left">
+                        <div class="title medium">1 hole </div>
+                        <p class="light">OUTCOURSE</p>
+                    </div>
+                    <div class="hold-right">
+                        <div class="title medium">Par <br />
+                            <span class="light">4</span>
+                        </div>
+                        <div class="title medium">HDCP <br />
+                            <span class="light">18</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/page-4/image1.png" >
+                <div class="block-hold-info row">
+                    <div class="col-sm-3">
+                        <ul>
+                            <li>Tornament <span class="light pull-right">375/356</span></li>
+                            <li>Championship <span class="light pull-right">357/338</span></li>
+                            <li>Regular <span class="light pull-right">338/320</span></li>
+                            <li>Front <span class="light pull-right">316/293</span></li>
+                            <li>Ladies <span class="light pull-right">286/263</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 column-info">
+                        <h5 class="medium">Info.</h5>
+                        <p>세컨지점 페어웨이 폭이 다른 홀에 비하여 좁은 편이며, 티샷 IP지점 왼쪽으로는 벙커가 오른쪽은 OB이기 때문에 티샷의 방향성이 매우 중요시 되는 홀 입니다</p>
+                    </div>
+                    <div class="col-sm-4 column-tip">
+                        <h5 class="medium text-yellow">Info.</h5>
+                        <p class="text-yellow">그린 좌 , 우 양쪽 사이드가 OB구역이기 때문 에 세컨샷을 핀보다 조금 짧게 공략하는 것이 좋으며 그린 스피드가 빠른 편이므로 플레이 어는 섬세한 감각을 가지고 퍼팅하는 것이 좋습니다</p>
+                    </div>
+                </div>
+                <div class="block-hold-thumbnail">
+                    <ul class="popup-gallery slider">
+                        <li>
+                            <a href="assets/images/page-4/1832.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1832.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="assets/images/page-4/1833.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1833.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1834.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1834.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1835.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1835.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1836.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1836.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 02 -->
+            <div class="block-hold">
+                <div class="block-hold-top">
+                    <div class="hold-left">
+                        <div class="title medium">11 hole </div>
+                        <p class="light">OUTCOURSE</p>
+                    </div>
+                    <div class="hold-right">
+                        <div class="title medium">Par <br />
+                            <span class="light">4</span>
+                        </div>
+                        <div class="title medium">HDCP <br />
+                            <span class="light">15</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/page-4/image2.png" >
+                <div class="block-hold-info row">
+                    <div class="col-sm-3">
+                        <ul>
+                            <li>Tornament <span class="light pull-right">364</span></li>
+                            <li>Championship <span class="light pull-right">348</span></li>
+                            <li>Regular <span class="light pull-right">320</span></li>
+                            <li>Front <span class="light pull-right">301</span></li>
+                            <li>Ladies <span class="light pull-right">280</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 column-info">
+                        <h5 class="medium">Info.</h5>
+                        <p>내리막 경사가 심한 홀로써 페어웨이 양쪽은 모두 헤저드로 구성 되어 있습니다. 그린 앞, 뒤로 헤저드 (Pond)가 있으므로 정교한 세컨샷을 요구 하는 홀 입니다</p>
+                    </div>
+                    <div class="col-sm-4 column-tip">
+                        <h5 class="medium text-yellow">Info.</h5>
+                        <p class="text-yellow">세컨샷의 볼 랜딩지점을 머리에 그려본 후 홀핀을 향하여 직접 공략하는 것이 좋습니다</p>
+                    </div>
+                </div>
+                <div class="block-hold-thumbnail">
+                    <ul class="popup-gallery slider">
+                        <li>
+                            <a href="assets/images/page-4/1832.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1832.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="assets/images/page-4/1833.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1833.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1834.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1834.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1835.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1835.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1836.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1836.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 03 -->
+            <div class="block-hold">
+                <div class="block-hold-top">
+                    <div class="hold-left">
+                        <div class="title medium">3 hole </div>
+                        <p class="light">OUTCOURSE</p>
+                    </div>
+                    <div class="hold-right">
+                        <div class="title medium">Par <br />
+                            <span class="light">3</span>
+                        </div>
+                        <div class="title medium">HDCP <br />
+                            <span class="light">2</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/page-4/image3.png" >
+                <div class="block-hold-info row">
+                    <div class="col-sm-3">
+                        <ul>
+                            <li>Tornament <span class="light pull-right">191/216</span></li>
+                            <li>Championship <span class="light pull-right">177/203</span></li>
+                            <li>Regular <span class="light pull-right">156/181</span></li>
+                            <li>Front <span class="light pull-right">136/161</span></li>
+                            <li>Ladies <span class="light pull-right">102/126</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 column-info">
+                        <h5 class="medium">Info.</h5>
+                        <p>약한 내리막 경사의 PAR3 홀로써 바람이 슬 라이스(오른쪽) 방향으로 많이 부는 홀 입니 다. 좌그린 사용 時 카트도로 좌측은 OB이며, 우그린 時 우측은 헤저드로 구성 되어 있습니다</p>
+                    </div>
+                    <div class="col-sm-4 column-tip">
+                        <h5 class="medium text-yellow">Info.</h5>
+                        <p class="text-yellow">그린 공략 시 홀핀의 좌측 방향을 공략 하는 것이 좋습니다</p>
+                    </div>
+                </div>
+                <div class="block-hold-thumbnail">
+                    <ul class="popup-gallery slider">
+                        <li>
+                            <a href="assets/images/page-4/1832.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1832.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="assets/images/page-4/1833.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1833.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1834.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1834.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1835.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1835.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1836.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1836.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 04 -->
+            <div class="block-hold">
+                <div class="block-hold-top">
+                    <div class="hold-left">
+                        <div class="title medium">4 hole </div>
+                        <p class="light">OUTCOURSE</p>
+                    </div>
+                    <div class="hold-right">
+                        <div class="title medium">Par <br />
+                            <span class="light">4</span>
+                        </div>
+                        <div class="title medium">HDCP <br />
+                            <span class="light">8</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/page-4/image4.png" >
+                <div class="block-hold-info row">
+                    <div class="col-sm-3">
+                        <ul>
+                            <li>Tornament <span class="light pull-right">351/338</span></li>
+                            <li>Championship <span class="light pull-right">326/313</span></li>
+                            <li>Regular <span class="light pull-right">308/298</span></li>
+                            <li>Front <span class="light pull-right">292/281</span></li>
+                            <li>Ladies <span class="light pull-right">260/250</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 column-info">
+                        <h5 class="medium">Info.</h5>
+                        <p>오르막 경사의 PAR4 홀로써 페어웨이 좌측은 OB이며, 우측은 헤저드로 구성되어 있습니다 실제거리는 385yd이나 오르막 경사를 감안한다며 400yd 이상의 거리감이 느껴지는 홀 입니다</p>
+                    </div>
+                    <div class="col-sm-4 column-tip">
+                        <h5 class="medium text-yellow">Info.</h5>
+                        <p class="text-yellow">언듈레이션이 심한 오르막 그린으로써 세컨샷 時 홀핀 보다 짧게 공략하는 것이 좋습니다 홀핀을 넘겨 온그린이 될 경우 퍼팅에 고전이 예상 됩니다</p>
+                    </div>
+                </div>
+                <div class="block-hold-thumbnail">
+                    <ul class="popup-gallery slider">
+                        <li>
+                            <a href="assets/images/page-4/1832.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1832.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="assets/images/page-4/1833.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1833.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1834.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1834.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1835.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1835.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1836.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1836.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 05 -->
+            <div class="block-hold">
+                <div class="block-hold-top">
+                    <div class="hold-left">
+                        <div class="title medium">5 hole </div>
+                        <p class="light">OUTCOURSE</p>
+                    </div>
+                    <div class="hold-right">
+                        <div class="title medium">Par <br />
+                            <span class="light">5</span>
+                        </div>
+                        <div class="title medium">HDCP <br />
+                            <span class="light">12</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/page-4/image5.png" >
+                <div class="block-hold-info row">
+                    <div class="col-sm-3">
+                        <ul>
+                            <li>Tornament <span class="light pull-right">481/491</span></li>
+                            <li>Championship <span class="light pull-right">447/457</span></li>
+                            <li class="regular">Regular <span class="light pull-right">422/430</span></li>
+                            <li class="ladies">Ladies <span class="light pull-right">382/392</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 column-info">
+                        <h5 class="medium">Info.</h5>
+                        <p>완만한 오르막 PAR4홀로써 전형적인 전략홀 입니다. 홀 좌ㆍ우측 모두 OB이며, 홀 중앙으로 정확히 공략하여야 하는 홀로써 특히 우측 그린은 경사각이심하므로 세컨샷 공략에 보다 신중을 기해야 합니다</p>
+                    </div>
+                    <div class="col-sm-4 column-tip">
+                        <h5 class="medium text-yellow">Info.</h5>
+                        <p class="text-yellow">오르막 그린으로써 홀핀보다 짧게 공략 하는 것이 퍼팅에 유리 합니다</p>
+                    </div>
+                </div>
+                <div class="block-hold-thumbnail">
+                    <ul class="popup-gallery slider">
+                        <li>
+                            <a href="assets/images/page-4/1832.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1832.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="assets/images/page-4/1833.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1833.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1834.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1834.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1835.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1835.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1836.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1836.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 06 -->
+            <div class="block-hold">
+                <div class="block-hold-top">
+                    <div class="hold-left">
+                        <div class="title medium">6 hole </div>
+                        <p class="light">OUTCOURSE</p>
+                    </div>
+                    <div class="hold-right">
+                        <div class="title medium">Par <br />
+                            <span class="light">4</span>
+                        </div>
+                        <div class="title medium">HDCP <br />
+                            <span class="light">5</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/page-4/image6.png" >
+                <div class="block-hold-info row">
+                    <div class="col-sm-3">
+                        <ul>
+                            <li>Tornament <span class="light pull-right">327/317</span></li>
+                            <li>Championship <span class="light pull-right">314/305</span></li>
+                            <li>Regular <span class="light pull-right">294/284</span></li>
+                            <li>Front <span class="light pull-right">270/260</span></li>
+                            <li>Ladies <span class="light pull-right">238/228</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 column-info">
+                        <h5 class="medium">Info.</h5>
+                        <p>어드레시 時 연못이 시야에 들어와 티샷이 다소 부담이 되는 홀이지만 연못을 넘기는데 비거리 200yd 이상이면 충분하므로 자신감 을 갖고 공략하는 것이 좋습니다 </p>
+                    </div>
+                    <div class="col-sm-4 column-tip">
+                        <h5 class="medium text-yellow">Info.</h5>
+                        <p class="text-yellow">타원형 그린 및 그린 앞에 벙커가 있어 세컨샷 공략 時 홀핀을 직접 공략하는 것이 좋습니다</p>
+                    </div>
+                </div>
+                <div class="block-hold-thumbnail">
+                    <ul class="popup-gallery slider">
+                        <li>
+                            <a href="assets/images/page-4/1832.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1832.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="assets/images/page-4/1833.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1833.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1834.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1834.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1835.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1835.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1836.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1836.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 07 -->
+            <div class="block-hold">
+                <div class="block-hold-top">
+                    <div class="hold-left">
+                        <div class="title medium">16 hole </div>
+                        <p class="light">OUTCOURSE</p>
+                    </div>
+                    <div class="hold-right">
+                        <div class="title medium">Par <br />
+                            <span class="light">3</span>
+                        </div>
+                        <div class="title medium">HDCP <br />
+                            <span class="light">3</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/page-4/image7.png" >
+                <div class="block-hold-info row">
+                    <div class="col-sm-3">
+                        <ul>
+                            <li>Tornament <span class="light pull-right">176/199</span></li>
+                            <li>Championship <span class="light pull-right">156/177</span></li>
+                            <li>Regular <span class="light pull-right">135/156</span></li>
+                            <li>Front <span class="light pull-right">109/127</span></li>
+                            <li>Ladies <span class="light pull-right">109/127</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 column-info">
+                        <h5 class="medium">Info.</h5>
+                        <p>다소 긴 PAR3홀로써 홀 중간에 연못과 벙커가 있으며 그린 후방 숲은 OB이므로 정확한 거리가 요구되는 홀 입니다</p>
+                    </div>
+                    <div class="col-sm-4 column-tip">
+                        <h5 class="medium text-yellow">Info.</h5>
+                        <p class="text-yellow">티샷을 짧게 공략하는 것이 ( 온그린 실패할 경우 )세컨샷에 보다 유리 합니다</p>
+                    </div>
+                </div>
+                <div class="block-hold-thumbnail">
+                    <ul class="popup-gallery slider">
+                        <li>
+                            <a href="assets/images/page-4/1832.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1832.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="assets/images/page-4/1833.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1833.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1834.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1834.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1835.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1835.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1836.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1836.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 08 -->
+            <div class="block-hold">
+                <div class="block-hold-top">
+                    <div class="hold-left">
+                        <div class="title medium">8 hole </div>
+                        <p class="light">OUTCOURSE</p>
+                    </div>
+                    <div class="hold-right">
+                        <div class="title medium">Par <br />
+                            <span class="light">5</span>
+                        </div>
+                        <div class="title medium">HDCP <br />
+                            <span class="light">6</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/page-4/image8.png" >
+                <div class="block-hold-info row">
+                    <div class="col-sm-3">
+                        <ul>
+                            <li>Tornament <span class="light pull-right">496/496</span></li>
+                            <li>Championship <span class="light pull-right">470/470</span></li>
+                            <li>Regular <span class="light pull-right">442/4425</span></li>
+                            <li>Front <span class="light pull-right">415/415</span></li>
+                            <li>Ladies <span class="light pull-right">358/359</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 column-info">
+                        <h5 class="medium">Info.</h5>
+                        <p>홀의 양쪽이 암벽으로 둘러싸여 있어 마치 그랜드캐년과 같은 웅장한 느낌을 주는 PAR5홀 입니다. 오르막 홀로써 페어웨이 좌측 언덕은 억새풀이 많은 헤저드 지역이며 우측은 암벽 헤저드 입니다</p>
+                    </div>
+                    <div class="col-sm-4 column-tip">
+                        <h5 class="medium text-yellow">Info.</h5>
+                        <p class="text-yellow">티샷 時 우측보다는 중앙 좌측을 공략하는 것이 안정적 입니다. 페어웨이 좌측에는 220yd의 페어웨이 벙커가 도사리고 있으므 로 중앙 또는 우측을 공략하는 것이 좋습니다</p>
+                    </div>
+                </div>
+                <div class="block-hold-thumbnail">
+                    <ul class="popup-gallery slider">
+                        <li>
+                            <a href="assets/images/page-4/1832.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1832.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="assets/images/page-4/1833.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1833.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1834.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1834.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1835.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1835.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1836.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1836.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- 09 -->
+            <div class="block-hold">
+                <div class="block-hold-top">
+                    <div class="hold-left">
+                        <div class="title medium">9 hole </div>
+                        <p class="light">OUTCOURSE</p>
+                    </div>
+                    <div class="hold-right">
+                        <div class="title medium">Par <br />
+                            <span class="light">4</span>
+                        </div>
+                        <div class="title medium">HDCP <br />
+                            <span class="light">4</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/page-4/image9.png" >
+                <div class="block-hold-info row">
+                    <div class="col-sm-3">
+                        <ul>
+                            <li>Tornament <span class="light pull-right">402/384</span></li>
+                            <li>Championship <span class="light pull-right">383/365</span></li>
+                            <li>Regular <span class="light pull-right">358/341</span></li>
+                            <li>Front <span class="light pull-right">337/320</span></li>
+                            <li>Ladies <span class="light pull-right">283/266</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-5 column-info">
+                        <h5 class="medium">Info.</h5>
+                        <p>왼쪽으로 살짝 휘어진 내리막 PAR4홀로써 페어웨이 좌우측 모두 해저드로 구성되어 있습니다. 티샷 IP 우측지점에 벙커가 있으 므로 티샷 공략 時 페어웨이 중앙 소나무의 왼쪽 방향을 공략하는 것이 좋습니다</p>
+                    </div>
+                    <div class="col-sm-4 column-tip">
+                        <h5 class="medium text-yellow">Info.</h5>
+                        <p class="text-yellow">그린 앞에 벙커가 도사리고 있으므로 세컨샷 은 홀핀보다 짧게 공략하는 유리 합니다</p>
+                    </div>
+                </div>
+                <div class="block-hold-thumbnail">
+                    <ul class="popup-gallery slider">
+                        <li>
+                            <a href="assets/images/page-4/1832.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1832.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="assets/images/page-4/1833.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1833.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1834.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1834.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1835.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1835.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="assets/images/page-4/1836.png" class="btn-gallery">
+                                <img src="assets/images/page-4/1836.png" >
+                                <div class="hover"></div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer class="wrapp-footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer top">
+                    <div class="footer-top inner">
+                        <div class="block-contact">
+                            <div class="block-list block-list-col-4">
+                                <div class="block-list-inner">
+                                    <div class="block-item">
+                                        <div class="box-top">
+                                                    <span class="icon">
+                                                        <img src="assets/images/icon-calendar_footer.png">
+                                                    </span>
+                                            <span class="text">
+                                                        예약실
+                                                    </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="small">T.031-887-7700 ~ 1 / F. 031-882-3122 <span class="call">전화하기</span> </p>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-top">
+                                                    <span class="icon">
+                                                        <img src="assets/images/icon-person_footer.png">
+                                                    </span>
+                                            <span class="text">
+                                                        예약실
+                                                    </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="small">T. 031-887-7700 ~ 1 <span class="call">전화하기</span> </p>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-top">
+                                                    <span class="icon">
+                                                        <img src="assets/images/icon-computer_footer.png">
+                                                    </span>
+                                            <span class="text">
+                                                        예약실
+                                                    </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="small">T. 031-887-7700 ~ 1 <span class="call">전화하기</span> </p>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-top">
+                                                    <span class="icon">
+                                                        <img src="assets/images/icon-chef_footer.png">
+                                                    </span>
+                                            <span class="text">
+                                                        예약실
+                                                    </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="small">T. 031-887-7700 ~ 1 <span class="call">전화하기</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer bottom">
+                    <div class="footer-bottom inner">
+                        <div class="block">
+                            <ul>
+                                <li>신세계건설(주)</li>
+                                <li>주소: 경기도 여주시 가남읍 자유그린길 69</li>
+                                <li>사업자등록번호: 201-81-44158</li>
+                                <li>통신판매업 신고번호: 제2009-경기여주-0051호</li>
+                            </ul>
+                        </div>
+                        <div class="block">
+                            <ul>
+                                <li>Tel. 02-2002-1231</li>
+                                <li>Fax. 02-2002-1232</li>
+                                <li>E-mail. jayucc@shinsegae.com</li>
+                                <li>대표이사: 윤명규</li>
+                                <li>개인정보책임자: 서화영</li>
+                            </ul>
+                        </div>
+                        <p>
+                            All Contents COPYRIGHT @JAYU COUNTRY CLUB
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/script/jquery.min.js"></script>
+<script src="assets/script/ace-responsive-menu-min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="assets/script/slick.min.js"></script>
+<script src="assets/script/main.js"></script>
+</body>
+</html>

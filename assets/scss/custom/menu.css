@@ -1,0 +1,14 @@
+.main-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  z-index: 10;
+  min-height: 100vh;
+}
+
+.main-menu .inner-main-menu {
+  padding: 20px;
+}
+/*# sourceMappingURL=menu.css.map */
