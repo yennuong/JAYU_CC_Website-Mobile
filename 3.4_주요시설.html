@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TA-FUN</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="assets/css/ace-responsive-menu.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 logo">
+                <h1>
+                    <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                </h1>
+            </div>
+            <div class="col-8 header-right">
+                <div class="user">
+                    <img src="assets/images/icon-user.png">
+                </div>
+                <div class="notification">
+                    <img src="assets/images/icon-info.png">
+                </div>
+                <div class="icon-menu">
+                    <img src="assets/images/menu_bar.png">
+                </div>
+                
+            </div>
+            <nav class="main-menu" style="display: none;">
+                <div class="inner-main-menu">
+                    <div class="top-menu">
+                        <div class="logo"><h1>
+                            <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                        </h1></div>
+                        <div class="close-menu">
+                            <img src="assets/images/icon-close.png" >
+                        </div>
+                    </div>
+                    <div class="middle-block">
+                        <div class="search-in-menu">
+                            <div class="icon-search">
+                                <img src="assets/images/icon-search.png" >
+                                <span class="on-search hidden">취소</span>
+                            </div>
+                            <form class="block-search" style="display: none;">
+                                <input type="text" placeholder="검색어를 입력해 주세요.">
+                                <button type="button"><img src="assets/images/icon-search.png" ></button>
+                            </form>
+                        </div>
+                        <div class="welcome">
+                            <h5 class="text-yellow">강도식님<br /> 환영합니다.</h5>
+                            <a href="#" class="logout">로그아웃 <img src="assets/images/icon-logout.png"></a>
+                        </div>
+                    </div>
+                    <!-- Menu Toggle btn-->
+                <div class="menu-toggle">
+                    <button type="button" id="menu-btn">
+                    </button>
+                </div>
+                <!-- Responsive Menu Structure-->
+                <!--Note: declare the Menu style in the data-menu-style="horizontal" (options: horizontal, vertical, accordion) -->
+                
+                <ul  id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+                    <li>
+                        <a href="javascript:;">예약서비스</a>
+                        <ul>
+                            <li><a href="#">실시간예약</a></li>
+                            <li><a href="#">주말예약</a></li>
+                            <li><a href="#">대기예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">뉴스&이벤트</a>
+                        <ul>
+                            <li><a href="#">세일&프로모션</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">예약이용안내</a></li>
+                            <li><a href="#">이용요금안내</a></li>
+                            <li><a href="#">홈페이지 이용안내</a></li>
+                            <li><a href="#">레스토랑 이용안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">클럽소개</a>
+                        <ul>
+                            <li><a href="#">클럽개요</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">경영테마</a></li>
+                            <li><a href="#">주요시설</a></li>
+                            <li><a href="#">입회안내</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">코스안내</a>
+                        <ul>
+                            <li><a href="#">전체코스소개</a></li>
+                            <li><a href="#">OUT코스</a></li>
+                            <li><a href="#">IN코스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">고객센터</a>
+                        <ul>
+                            <li><a href="#">주요연락처</a></li>
+                            <li><a href="#">분실물센터</a></li>
+                            <li><a href="#">명예의전당</a></li>
+                            <li><a href="#">날씨정보</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">통합FAQ</a></li>
+                        </ul>
+                </ul>
+                </div>
+                
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="main-page  main-page-3 main-page-3-tab-intro main-page-3-4">
+    <div class="container">
+        <div class="row">
+            <div class="top">
+                <h3 class="page-title">시설안내</h3>
+            </div>
+            <div class="list-product">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link  active" id="nav-tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="home" aria-selected="true">C/H 전경</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="profile" aria-selected="false">로비 & 비즈니스</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="profile" aria-selected="false">레스토랑</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="contact" aria-selected="false">단체PDR룸</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-5" data-toggle="tab" href="#tab5" role="tab" aria-controls="contact" aria-selected="false">락커룸 & 사우나</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-6" data-toggle="tab" href="#tab6" role="tab" aria-controls="contact" aria-selected="false">익스프레스 샤워존</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-7" data-toggle="tab" href="#tab7" role="tab" aria-controls="contact" aria-selected="false">프로샵</a>
+                    </li>
+                    
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-tab-1">
+                        <div class="item-product item-product-1">
+                            <div class="col-sm-6 product-image">
+                                <img src="assets/images/page-3/add/tab016.png">
+                            </div>
+                            <div class="col-sm-6 product-info ">
+                                    <h4 class="title">Club House Foregrounds</h4>
+                                    <p>최고의 서비스를 위한</p>
+                                    <p>자유컨트리 클럽하우스입니다.</p>
+                                </div>
+                        </div>
+                        <div class="item-product item-product-2">
+                            <div class="col-sm-6 product-image">
+                                <img src="assets/images/page-3/add/tab017.png">
+                            </div>
+                            <div class="col-sm-6 product-info">
+                                <p> 차분하고 고급스런 분위기의 클럽하우스는 대칭구조와</p>
+                                <p> 흑백의 대비를 강조하는 아르데코 형식을</p>
+                                <p> 재 해석한 디자인으로 설계되었습니다.</p>
+
+
+                            </div>
+                        </div>
+                        <div class="product-banner">
+                            <img src="assets/images/page-3/add/tab018.png">
+                            <p>1.클럽하우스 현관 전경  2.클럽하우스 좌측에서 바라본 풍경 3.코스에서바라본 클럽하우스 풍경 </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-tab-2">
+                        <div class="item-product item-product-1">
+                            <div class="col-sm-6 product-image">
+                                <img src="assets/images/page-3/add/tab013.png">
+                            </div>
+                            <div class="col-sm-6 product-info ">
+                                <h4 class="title">Lobby & Business</h4>
+                                <p>메인 로비에 위치한 프론트에서는</p>
+
+                                <p>클럽이용안내 및 정산을 도와드리고 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-2">
+                            <div class="col-sm-6 product-image">
+                                <img src="assets/images/page-3/add/tab014.png">
+                            </div>
+                            <div class="col-sm-6 product-info">
+                                <p> 프론트 맞은 편에 위치하고 있으며</p>
+                                <p> 비즈니스 업무를 위한</p>
+                                <p> 컴퓨터 복합기 (복사, 스캔, 출력)가 구비되어 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="product-banner">
+                            <img src="assets/images/page-3/add/tab015.png">
+                            <p>1.비즈니스 업무를 위한 공간 2.정면에서 바라본 프론트 3.로비에 배치되어 있는 소파 </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="nav-tab-3">
+                        <div class="item-product item-product-1">
+                            <div class="col-sm-6 product-image">
+                                <img src="assets/images/page-3/add/tab10.png">
+                            </div>
+                            <div class="col-sm-6 product-info ">
+                                <h4 class="title">Restaurant</h4>
+                                <p>2층에 위치한 레스토랑은 천정고를 최대한 활용하여</p>
+
+                                <p>넓은 공간감을 확보하였고 직원동선과 고객의 동선을</p>
+
+                                <p>적절히 분리하여 고객서비스에 불편함이 없도록</p>
+
+                                <p>고려하였습니다.</p>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-2">
+                            <div class="col-sm-6 product-image">
+                                <img src="assets/images/page-3/add/tab011.png">
+                            </div>
+                            <div class="col-sm-6 product-info">
+                                <p> 모노톤의 은은하고 깊이있는 공간 연출 속에</p>
+                                <p> ART WORK를 이용하여 공간에 조형미를</p>
+                                <p>극대화 하였습니다.</p>
+
+                            </div>
+                        </div>
+                        <div class="product-banner">
+                            <img src="assets/images/page-3/add/tab012.png">
+                            <p>1.테라스  2.레스토랑 테이블  3.레스토랑 전경사진</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="nav-tab-4">
+                        <div class="item-product item-product-1">
+                           
+                            <div class="col-sm-6 product-image">
+                                <img src="assets/images/page-3/add/tab07.png">
+                            </div>
+                            <div class="col-sm-6 product-info ">
+                                <h4 class="title">Groups PDR Room</h4>
+                                <p>단체실은 무버블 파티션을 이용하여</p>
+
+                                <p>다양한 규모의 모임에 대응하는 공간으로 설계되었고,</p>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-2">
+                            <div class="col-sm-6 product-image">
+                                <img src="assets/images/page-3/add/tab08.png">
+                            </div>
+                            <div class="col-sm-6 product-info">
+                                <p>  모던한 스타일로 심플하게 정리하여</p>
+                                <p> 고객들이 언제나 편안하게 이용할 수 있도록</p>
+                                <p>은은한 간접 조명의 사용으로 편안하고</p>
+
+                                <p> 공간을 마련하였습니다.</p>
+                            </div>
+                        </div>
+                        <div class="product-banner">
+                            <img src="assets/images/page-3/add/tab09.png">
+                            <p>1.비즈니스 업무를 위한 공간 2.정면에서 바라본 프론트  3.단체 8인실</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="nav-tab-5">
+                        <div class="item-product item-product-1">
+                            <div class="col-sm-6 product-image">
+                                <img src="assets/images/page-3/add/tab04.png">
+                            </div>
+                            <div class="col-sm-6 product-info ">
+                                <h4 class="title">Locker & Sauna</h4>
+                                <p>야외의 풍경감상하며 편안하게 사우나를 즐기실 수 있습니다. </p>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-2">
+                            <div class="col-sm-6 product-image">
+                                <img src="assets/images/page-3/add/tab05.png">
+                            </div>
+                            <div class="col-sm-6 product-info">
+                                <p> 락커룸은 내츄럴한 마감재와 밝은 톤의 마감으로.</p>
+                                <p> 청결함을 강조하였습니다.,</p>
+                                <p>은은한 간접 조명의 사용으로 편안하고</p>
+
+                                <p>안정감있는 공간을 연출하였습니다.</p>
+
+
+
+                            </div>
+                        </div>
+                        <div class="product-banner">
+                            <img src="assets/images/page-3/add/tab06.png">
+                            <p>1.로비에서 이어지는 락커룸 복도 2.락커룸 내부  3.사우나 욕탕</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="nav-tab-6">
+                        <div class="item-product item-product-1">
+                            <div class="col-sm-6 product-image">
+                                <img src="assets/images/page-3/add/tab01.png">
+                            </div>
+                            <div class="col-sm-6 product-info ">
+                                <h4 class="title">Express shower Zone</h4>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-2">
+                            <div class="col-sm-6 product-image">
+                                <img src="assets/images/page-3/add/tab02.png">
+                            </div>
+                            <div class="col-sm-6 product-info">
+                                <p> 간편하고 신속하게 샤워와 파우더를.</p>
+                                <p>One Stop으로 할 수 있도록,</p>
+                                <p>마련된 샤워부스입니다.</p>
+                            </div>
+                        </div>
+                        <div class="product-banner">
+                            <img src="assets/images/page-3/add/tab03.png">
+                            <p>1.익스프레스 샤워존 내부   2.익스프레스 샤워존 내부  3.익스프레스 샤워존 입구</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="tab7" role="tabpanel" aria-labelledby="nav-tab-7">
+                        <div class="item-product item-product-1">
+                            <div class="col-sm-6 product-image">
+                                    <img src="assets/images/page-3/product1.png">
+                            </div>
+                            <div class="col-sm-6 product-info ">
+                                <h4 class="title">Prop Shop</h4>
+                                <p>로비에 고객을 위한 </p>
+                                <p>프로샵이 위치해 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-2">
+                            <div class="col-sm-6 product-image">
+                                    <img src="assets/images/page-3/product2.png">
+                            </div>
+                            <div class="col-sm-6 product-info">
+                                <p>심플하면서 럭셔리한 샵공간.</p>
+                                <p>다양한 골프웨어와 용품,</p>
+                                <p>각종 특산품을 판매하고 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="product-banner">
+                            <img src="assets/images/page-3/product3.png">
+                            <p>1.프로샵 내부 2.프로샵 내부  3.프로샵 입구</p>
+                        </div>
+                    </div>
+                    
+                    
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="wrapp-footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer top">
+                    <div class="footer-top inner">
+                        <div class="block-contact">
+                            <div class="block-list block-list-col-4">
+                                <div class="block-list-inner">
+                                    <div class="block-item">
+                                        <div class="box-top">
+                                                    <span class="icon">
+                                                        <img src="assets/images/icon-calendar_footer.png">
+                                                    </span>
+                                            <span class="text">
+                                                        예약실
+                                                    </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="small">T.031-887-7700 ~ 1 / F. 031-882-3122 <span class="call">전화하기</span> </p>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-top">
+                                                    <span class="icon">
+                                                        <img src="assets/images/icon-person_footer.png">
+                                                    </span>
+                                            <span class="text">
+                                                        예약실
+                                                    </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="small">T. 031-887-7700 ~ 1 <span class="call">전화하기</span> </p>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-top">
+                                                    <span class="icon">
+                                                        <img src="assets/images/icon-computer_footer.png">
+                                                    </span>
+                                            <span class="text">
+                                                        예약실
+                                                    </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="small">T. 031-887-7700 ~ 1 <span class="call">전화하기</span> </p>
+                                        </div>
+                                    </div>
+                                    <div class="block-item">
+                                        <div class="box-top">
+                                                    <span class="icon">
+                                                        <img src="assets/images/icon-chef_footer.png">
+                                                    </span>
+                                            <span class="text">
+                                                        예약실
+                                                    </span>
+                                        </div>
+                                        <div class="desc">
+                                            <p class="small">T. 031-887-7700 ~ 1 <span class="call">전화하기</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer bottom">
+                    <div class="footer-bottom inner">
+                        <div class="block">
+                            <ul>
+                                <li>신세계건설(주)</li>
+                                <li>주소: 경기도 여주시 가남읍 자유그린길 69</li>
+                                <li>사업자등록번호: 201-81-44158</li>
+                                <li>통신판매업 신고번호: 제2009-경기여주-0051호</li>
+                            </ul>
+                        </div>
+                        <div class="block">
+                            <ul>
+                                <li>Tel. 02-2002-1231</li>
+                                <li>Fax. 02-2002-1232</li>
+                                <li>E-mail. jayucc@shinsegae.com</li>
+                                <li>대표이사: 윤명규</li>
+                                <li>개인정보책임자: 서화영</li>
+                            </ul>
+                        </div>
+                        <p>
+                            All Contents COPYRIGHT @JAYU COUNTRY CLUB
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/script/jquery.min.js"></script>
+<script src="assets/script/ace-responsive-menu-min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/script/slick.min.js"></script>
+<script src="assets/script/main.js"></script>
+</body>
+</html>

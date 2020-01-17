@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nanum+Myeongjo:700&display=swap");
 @font-face {
   font-family: 'AvenirLTStd-Light';
   src: url("../fonts/avenirltstd-light/AvenirLTStd-Light.eot");
@@ -2404,6 +2405,18 @@ select {
 
 .main-page-3 {
   margin-bottom: 100px; }
+  .main-page-3 .page-title {
+    margin-bottom: 30px; }
+  .main-page-3 .block-info-page-3-1 .nav-tabs .nav-item.show .nav-link, .main-page-3 .block-info-page-3-1 .nav-tabs .nav-link.active {
+    border: 0; }
+  .main-page-3 .block-info-page-3-1 .nav-tabs {
+    margin-bottom: 20px;
+    border-bottom: 0; }
+    .main-page-3 .block-info-page-3-1 .nav-tabs .nav-link {
+      padding: 0 8px;
+      color: #898989; }
+      .main-page-3 .block-info-page-3-1 .nav-tabs .nav-link.active {
+        color: #000; }
   .main-page-3 .block-info-page-3-1 .item .image {
     margin-bottom: 20px; }
   .main-page-3 .block-info-page-3-1 .item h3.title {
@@ -2422,55 +2435,78 @@ select {
   margin-left: -50vw;
   left: 50%;
   margin-bottom: 150px;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  height: 274px; }
+  .main-page-3-2 .block-info-ceo .row {
+    align-items: center;
+    height: 247px; }
   .main-page-3-2 .block-info-ceo .inner-info-ceo {
     max-width: 980px;
     position: relative;
-    margin: 0 auto;
-    padding-top: 60px; }
+    margin: 0 auto; }
     .main-page-3-2 .block-info-ceo .inner-info-ceo .info-left {
-      margin-right: 300px; }
-    .main-page-3-2 .block-info-ceo .inner-info-ceo .info-right img {
-      max-width: 300px;
-      margin-top: -209px; }
+      font-size: 15px;
+      padding-left: 30px; }
+    .main-page-3-2 .block-info-ceo .inner-info-ceo .info-right {
+      position: absolute;
+      right: 0;
+      top: -70px; }
+      .main-page-3-2 .block-info-ceo .inner-info-ceo .info-right img {
+        max-width: 209px; }
 .main-page-3-2 .desc-info {
   font-weight: 300; }
 
 .main-page-3-3 .desc-color {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   margin-top: 100px; }
-  .main-page-3-3 .desc-color li .image {
-    margin-bottom: 30px;
-    position: relative; }
-  .main-page-3-3 .desc-color li:first-child .image {
-    right: -40px; }
-  .main-page-3-3 .desc-color li:first-child .desc {
-    padding-left: 65px; }
-  .main-page-3-3 .desc-color li:nth-child(3) .image {
-    position: relative;
-    left: -40px; }
+  .main-page-3-3 .desc-color li {
+    width: 323px;
+    height: 323px;
+    border-radius: 50%;
+    background: #F26522;
+    color: #fff;
+    text-align: center;
+    border: 1px solid transparent; }
+    .main-page-3-3 .desc-color li .title {
+      padding-top: 100px; }
+    .main-page-3-3 .desc-color li > div {
+      width: 100%; }
+    .main-page-3-3 .desc-color li h4 {
+      font-family: 'Nanum Myeongjo', serif;
+      text-transform: uppercase; }
+    .main-page-3-3 .desc-color li.green {
+      background: #1A8636;
+      margin-top: -50px; }
+    .main-page-3-3 .desc-color li.white {
+      background: #fff;
+      border-color: #ddd;
+      color: #000;
+      margin-top: -75px; }
 
 .list-product ul.nav {
   display: flex;
   display: -webkit-flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   border-bottom: 0;
   margin-bottom: 50px; }
   .list-product ul.nav li {
-    text-align: center; }
+    text-align: center;
+    width: 50%;
+    font-size: 14px;
+    margin-bottom: 10px; }
     .list-product ul.nav li a {
       color: #898989;
       border: 0;
-      border-radius: 0; }
+      border-radius: 0;
+      padding: 0 5px; }
 .list-product .item-product {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 30px;
+  display: inline-block; }
   .list-product .item-product > div {
-    padding: 0; }
+    padding: 0;
+    margin-bottom: 30px; }
+.list-product .product-banner img {
+  margin-bottom: 30px; }
 
 .main-page-3-5 h4.title {
   margin-bottom: 40px; }
@@ -2480,7 +2516,8 @@ select {
   margin-bottom: 30px;
   margin-top: 20px; }
   .main-page-3-5 .block-require .info-require .col-sm-6 {
-    display: flex; }
+    display: flex;
+    margin-bottom: 30px; }
     .main-page-3-5 .block-require .info-require .col-sm-6 .inner {
       background-color: #f4f4f4;
       padding: 30px;

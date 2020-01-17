@@ -1,21 +1,42 @@
 .main-page-3 {
     margin-bottom: 100px;
-    .block-info-page-3-1 .item {
-        .image {
+    .page-title {
+        margin-bottom: 30px;
+    }
+    .block-info-page-3-1 {
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            border: 0;
+        }
+        .nav-tabs {
             margin-bottom: 20px;
-        }
-        h3.title {
-            margin-bottom: 20px;
-        }
-        h5 {
-            margin-top: 20px;
-            font-weight: 400;
-            font-size: 1.1rem;
-        }
-        p {
-            font-weight: 300;
+            border-bottom: 0;
+            .nav-link {
+                padding: 0 8px;
+                color: $color-gray-3;
+                &.active {
+                    color: $color-black;
+                }
+            }
+        } 
+        
+        .item {
+            .image {
+                margin-bottom: 20px;
+            }
+            h3.title {
+                margin-bottom: 20px;
+            }
+            h5 {
+                margin-top: 20px;
+                font-weight: 400;
+                font-size: 1.1rem;
+            }
+            p {
+                font-weight: 300;
+            }
         }
     }
+    
 }
 //page 3.2
 .main-page-3-2 {
@@ -27,18 +48,28 @@
         left: 50%;
         margin-bottom: 150px;
         background-color: #f8f8f8;
+        height: 274px;
+        .row {
+            align-items: center;
+            height: 247px;;
+        }
         .inner-info-ceo {
             max-width: 980px;
             position: relative;
             margin: 0 auto;
-            padding-top: 60px;
             .info-left {
-                margin-right: 300px;
+                font-size: 15px;
+                padding-left: 30px;
             }
-            .info-right img {
-                max-width: 300px;
-                margin-top: -209px;
-            }
+            .info-right {
+                position: absolute;
+                right: 0;
+                top: -70px;
+                img {
+                    max-width: 209px;
+                }
+            } 
+            
         }
     }
     .desc-info {
@@ -49,27 +80,34 @@
 //page 3.3
 .main-page-3-3 {
     .desc-color {
-        display: flex;
-        justify-content: center;
-        text-align: center;
         margin-top: 100px;
         li {
-            .image {
-                margin-bottom: 30px;
-                position: relative;
+            width: 323px;
+            height: 323px;
+            border-radius: 50%;
+            background: #F26522;
+            color: #fff;
+            text-align: center;
+            border: 1px solid transparent;
+            .title {
+                padding-top: 100px;
             }
-            &:first-child {
-                .image {
-                    right: -40px;
-                }
-                .desc {
-                    padding-left: 65px;
-                }
+            >div {
+                width: 100%;
             }
-            
-            &:nth-child(3) .image {
-                position: relative;
-                left: -40px;
+            h4 {
+                font-family: 'Nanum Myeongjo', serif;
+                text-transform: uppercase;
+            }
+            &.green {
+                background: #1A8636;
+                margin-top: -50px;
+            }
+            &.white {
+                background:  #fff;
+                border-color: #ddd;
+                color: $color-black;
+                margin-top: -75px;
             }
         }
     }
@@ -79,26 +117,33 @@
     ul.nav {
         display: flex;
         display: -webkit-flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         border-bottom: 0;
         margin-bottom: 50px;
         li {
             text-align: center;
+            width: 50%;
+            font-size: 14px;
+            margin-bottom: 10px;
             a {
                 color: #898989;
                 border: 0;
                 border-radius: 0;
+                padding: 0 5px;
             }
         }
     }
     .item-product {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         text-align: center;
+        margin-bottom: 30px;
+        display: inline-block;
         > div {
             padding: 0;
+            margin-bottom: 30px;
         }
+    }
+    .product-banner img {
+        margin-bottom: 30px;
     }
 }
 //Page 3-5
@@ -115,6 +160,7 @@
             margin-top: 20px;
             .col-sm-6 {
                 display: flex;
+                margin-bottom: 30px;
                 .inner {
                     background-color: #f4f4f4;
                     padding: 30px;
