@@ -3622,7 +3622,7 @@ select {
 
 .header .main-menu {
   position: fixed;
-  width: calc((100% - 60px));
+  width: 100% !important;
   max-height: 100%;
   min-height: 100%;
   top: 0;
@@ -3633,7 +3633,7 @@ select {
   -ms-transition: left 0.7s;
   transition: left 0.7s;
   overflow-x: hidden;
-  display: block;
+  display: block !important;
 }
 
 .nav-open .main-menu {
