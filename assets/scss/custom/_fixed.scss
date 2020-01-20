@@ -1,0 +1,22 @@
+.header{
+    .main-menu{
+        position: fixed;
+        width: calc((100% - 60px));
+        max-height: 100%;
+        min-height: 100%;
+        top: 0;
+        z-index: 100;
+        left: -100%;
+        -webkit-transition: left 0.7s;
+        -moz-transition: left 0.7s;
+        -ms-transition: left 0.7s;
+        transition: left 0.7s;
+        overflow-x: hidden;
+        display: block;
+    }
+}
+.nav-open{
+    .main-menu{
+        left: 0;
+    }
+}
